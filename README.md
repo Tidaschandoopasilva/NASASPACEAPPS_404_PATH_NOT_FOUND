@@ -24,73 +24,63 @@ The project brings a NASA/USGS Jezero map, terrain mesh, research decision model
 
 **Five main views:** **Atlas** (imagery, route overlays, recorded sectors), **Mission 3D** (mission playback and habitat inventory), **Scout or Skip** (decision exploration), **Rewind** (saved research runs), and **404-SVNet** (model evaluation).
 
-## Installation and running the application
+## Install and run — Windows Python desktop application
 
-404: PATH NOT FOUND can be run as a **Windows desktop app** or in a **web browser** for development. The repository already includes the 3D/frontend build, terrain assets, and model files needed for the desktop version.
+**404: PATH NOT FOUND V7 is delivered as a Python desktop application.** The 2D Atlas and 3D mission interface are bundled with the project and run inside a native window powered by Python and WebView2. You **do not need Node.js, npm, Vite, or a separately running web server** to use the desktop release.
 
-### Step 1 — Download the project
+### Requirements
 
-Click **Code → Download ZIP** on this repository and extract the entire ZIP before running any scripts. Alternatively, use Git:
+- **Windows 10 or 11, 64-bit**
+- **Python 3.11 or 3.12, 64-bit**, including the Windows `py` launcher
+- **Microsoft Edge WebView2 Runtime** (usually already installed)
+- Internet access for the first installation of Python packages
 
-```bash
+### Download
+
+Click **Code → Download ZIP** on this repository, then extract the **entire ZIP** into a folder (for example, `C:\Team404`). Keep the provided `app`, `apps`, `data`, `models`, and launcher files together. **Do not run the BAT files from inside the ZIP preview.**
+
+Alternatively, clone the project:
+
+```cmd
 git clone https://github.com/Tidaschandoopasilva/NASASPACEAPPS_404_PATH_NOT_FOUND.git
 cd NASASPACEAPPS_404_PATH_NOT_FOUND
 ```
 
-### Option A — Windows desktop (recommended)
+### First-time installation
 
-**Install first:** Windows 10/11 (64-bit), **Python 3.11 or 3.12 (64-bit)** with the `py` launcher, and **Microsoft Edge WebView2 Runtime**. Internet is needed for the first dependency installation. **Node.js is NOT required** for the desktop app.
+In the extracted project folder, **double-click `setup_desktop.bat` once**. It creates a local `.venv` Python environment and installs the dependencies in `requirements-desktop.txt`. When the window displays `Setup complete`, close it.
 
-From the extracted project's main folder:
+### Launch the application
 
-1. Double-click **`setup_desktop.bat`** once. This creates `.venv` and installs Python dependencies.
-2. Double-click **`start_desktop.bat`** to start the **404 | Jezero Habitat V7** app in a desktop window.
-3. Open **Atlas**, choose a survey circle, select **Run expedition**, and switch to **Mission 3D** to follow the simulated mission.
+**Double-click `start_desktop.bat`** in the same folder. The **404 | Jezero Habitat V7** desktop window should open automatically.
 
-Or use Command Prompt, from the repository root:
+Or run these commands *one at a time* in Command Prompt, from the project root:
 
 ```cmd
 setup_desktop.bat
 start_desktop.bat
 ```
 
-The desktop uses the bundled `apps/web/dist/` frontend and a local Python backend. Mission and habitat campaign records persist at `%USERPROFILE%\MarsHabitat\desktop.sqlite3` by default.
+After opening the application, use **Atlas** to select a survey region, click **Run expedition**, and open **Mission 3D** to follow the simulated UAV, rover and astronaut mission. Habitat resources, route decisions, sector records and replay are accessible in the desktop interface.
 
-### Option B — Browser / developer mode
+### Where your campaign is saved
 
-**Install first:** Python **3.11 or 3.12**, **Node.js 22.12+ or 24** (with npm), and Git if cloning the repository.
+The application saves its local campaign SQLite database to:
 
-**On Windows**, open Command Prompt in the project root and run:
-
-```cmd
-scripts\setup.bat
-scripts\start_all.bat
+```text
+%USERPROFILE%\MarsHabitat\desktop.sqlite3
 ```
 
-Open **http://localhost:5173** in your browser. The FastAPI server runs at **http://127.0.0.1:8000**. Keep the command window open; press **Ctrl+C** to stop the development servers.
+Records survive restarts. Back up that file before removing or reinstalling the project if you want to keep your mission history.
 
-**On macOS / Linux** (developer mode only), open Terminal in the project root:
+### If the desktop application does not open
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-npm --prefix apps/web ci
-PYTHON="$PWD/.venv/bin/python" npm run dev
-```
+- **`py` is not recognized:** install 64-bit Python 3.11/3.12 with the Windows Python launcher, reopen Command Prompt, then rerun `setup_desktop.bat`.
+- **Missing WebView2 / blank window:** install or repair Microsoft's Edge WebView2 Runtime. Verify `apps/web/dist/index.html` is present.
+- **Dependency installation fails:** confirm internet access and a compatible Python version; rerun `setup_desktop.bat`.
+- **`Run setup_desktop.bat first`:** the virtual environment has not been created; run setup before the launcher.
 
-Then visit **http://localhost:5173**.
-
-### Verify and troubleshoot
-
-- **Desktop:** the app window should show Atlas and Mission 3D. A blank window may indicate a missing **WebView2 Runtime** or `apps/web/dist/index.html`.
-- **Browser:** check **http://127.0.0.1:8000/health** for the API and **http://localhost:5173** for the interface.
-- If `py` is not recognized, install Python 3.11/3.12 with the Windows launcher and reopen Command Prompt.
-- If `npm` is not recognized, install Node.js (needed only for developer/browser mode).
-- To run tests on Windows after setup: `.venv\Scripts\python.exe -m pytest -q`.
-- To rebuild the React frontend after making changes: `npm run build`.
-
-For additional configuration, offline installation, campaign database options, and detailed troubleshooting, see **[Full installation guide](docs/INSTALLATION.md)** and **[Desktop user guide](README_DESKTOP.md)**.
+**Further details:** [Desktop user guide](README_DESKTOP.md) · [Full installation reference](docs/INSTALLATION.md)
 
 ## Screenshots — V7 desktop build
 
