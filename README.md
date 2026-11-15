@@ -1,5 +1,18 @@
 # 404: PATH NOT FOUND
 
+<!-- TEAM404 VIDEO DEMO START -->
+## Watch the V7 mission demonstration
+
+Explore the complete Jezero expedition: NASA-derived terrain, UAV scouting, rover confirmation, astronaut EVA, weather planning, mission replay and accumulated habitat campaign records.
+
+[![Watch Team 404 V7 Marswalk mission demo](docs/media/404_DEMO_PREVIEW.gif)](docs/media/404_PATH_NOT_FOUND_V7_Demo.mp4)
+
+**[â–¶ Watch or download the full V7 demonstration (MP4)](docs/media/404_PATH_NOT_FOUND_V7_Demo.mp4)** Â· 1 min 21 sec
+
+*The animated preview plays directly in this README. Click it to open the full video with audio. GitHub only supports a native inline MP4 player for videos uploaded through GitHub's web editor as an attachment; see the included instructions.*
+<!-- TEAM404 VIDEO DEMO END -->
+
+
 **Team 404 | Jezero Crater | NASA Space Apps Challenge 2026**  
 *A Marswalk and habitat-expedition planning simulator with terrain-aware scouting, crew/rover routing, campaign resources and decision evaluation.*
 
