@@ -1,0 +1,33 @@
+[
+  {
+    "id": "PIA24485",
+    "name": "Delta remnant from the landing site",
+    "sol": 4,
+    "camera": "Mastcam-Z",
+    "date": "2021-02-22",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/detail_files/2/5/25695_PIA24485_K4_ZCAM_main_sol004_Delta_Remnant_unannotated.jpg",
+    "page": "https://science.nasa.gov/resource/perseverance-view-of-the-delta-in-jezero-crater/",
+    "path": "/photos/PIA24485.jpg",
+    "bytes": 2264934,
+    "sha256": "f7e0dcb2683102aee9eb29716c14a638c4fe4ed505119906fbbb978d887fa232",
+    "credit": "NASA/JPL-Caltech/ASU/MSSS",
+    "data_state": "OBSERVED",
+    "spatial_context": "Approximate regional context; not registered to proposed stops"
+  },
+  {
+    "id": "PIA25212",
+    "name": "Jezero delta panorama",
+    "sol": 406,
+    "camera": "Mastcam-Z",
+    "date": "2022-04-11",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/deepzooms/2/6/26676_PIA25212-web.jpg",
+    "page": "https://science.nasa.gov/resource/jezero-craters-delta-is-getting-closer/",
+    "download_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/deepzooms/2/6/26676_PIA25212-web.jpg?w=1800&fit=clip",
+    "path": "/photos/PIA25212.jpg",
+    "bytes": 78513,
+    "sha256": "f4d80a37b5f7cabfba6837e908a4d3a22c96ac9cb471b944907c787e7b7ac31e",
+    "credit": "NASA/JPL-Caltech/ASU/MSSS",
+    "data_state": "OBSERVED",
+    "spatial_context": "Approximate regional context; not registered to proposed stops"
+  }
+]

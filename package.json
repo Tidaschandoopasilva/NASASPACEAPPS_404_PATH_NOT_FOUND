@@ -1,0 +1,1 @@
+{"name":"404-path-not-found","private":true,"version":"1.0.0","scripts":{"dev":"node scripts/dev.mjs","build":"npm --prefix apps/web run build","setup":"npm --prefix apps/web ci"}}

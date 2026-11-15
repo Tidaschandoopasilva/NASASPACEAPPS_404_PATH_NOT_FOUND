@@ -1,0 +1,19 @@
+train 50
+train 100
+train 150
+train 200
+train 250
+train 300
+train 350
+train 400
+train {'accepted': 400, 'attempts': 411, 'excluded_no_route': 11}
+validation 50
+validation 100
+validation {'accepted': 100, 'attempts': 100, 'excluded_no_route': 0}
+calibration 50
+calibration 100
+calibration {'accepted': 100, 'attempts': 100, 'excluded_no_route': 0}
+test 50
+test 100
+test {'accepted': 100, 'attempts': 100, 'excluded_no_route': 0}
+Wrote 2100 action records

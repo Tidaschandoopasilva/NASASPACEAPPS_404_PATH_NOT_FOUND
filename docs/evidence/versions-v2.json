@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "numpy": "2.3.5",
+    "rasterio": "1.5.2",
+    "fastapi": "0.141.1",
+    "pytest": "9.2.0",
+    "pillow": "13.0.0"
+  }
+}

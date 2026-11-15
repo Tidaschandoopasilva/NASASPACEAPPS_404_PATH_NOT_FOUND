@@ -1,0 +1,8 @@
+{
+  "training_questions": 144,
+  "held_out_questions": 48,
+  "topics": 16,
+  "intent_accuracy": 1.0,
+  "dataset": "Hand-authored synthetic questions, split by phrasing within each topic",
+  "errors": []
+}

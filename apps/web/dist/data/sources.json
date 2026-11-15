@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nasa-trek-hirise",
+    "name": "Jezero HiRISE controlled mosaic",
+    "owner": "NASA/JPL/USGS",
+    "url": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars",
+    "status": "USED / OBSERVED",
+    "description": "20 WMTS tiles acquired 2026-11-14 from published capabilities. ROI 77.40\u201377.48 E, 18.42\u201318.49 N; matrix 13. Texture cached locally. Effective WMTS sample spacing about 5.09 m; 0.25 m source product is not the rendered resolution."
+  },
+  {
+    "id": "usgs-ctx-dem",
+    "name": "Jezero CTX 20 m elevation model",
+    "owner": "USGS Astrogeology",
+    "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/ScienceInvestigationMaps_JPL/M20_JezeroCrater_CTXDEM_20m.tif",
+    "status": "USED / OBSERVED + DERIVED",
+    "description": "USGS/NASA CTX 20 m DEM acquired by bounded HTTP range requests (8,015,040 bytes). Cropped GeoTIFF drives the 3D terrain, slopes, A* and SVNet scenarios. Native Mars sphere, equirectangular standard parallel 18.4663 degrees; planetocentric/east-positive. UI resampled to about 47.35 \u00d7 43.68 m. Local Atlas relief uses a north-up hillshade rendered from the native Jezero planner mesh."
+  },
+  {
+    "id": "usgs-geology",
+    "name": "Geologic map of Jezero and Nili Planum",
+    "owner": "Sun & Stack / USGS, 2020",
+    "url": "https://pubs.usgs.gov/publication/sim3464",
+    "status": "USED / CONTEXT ONLY",
+    "description": "Geological motivation for sedimentary and crater-floor investigations. Proposed waypoints have not been intersected with mapped units; they are assumed study targets."
+  },
+  {
+    "id": "rover-model",
+    "name": "Mars 2020 Perseverance rover",
+    "owner": "NASA / Jet Propulsion Laboratory",
+    "url": "https://science.nasa.gov/3d-resources/mars-2020-perseverance-rover/",
+    "status": "USED / 3D ASSET",
+    "description": "Original GLB downloaded; all materials replaced with neutral material at rendering to remove texture-based insignia. Animation is kinematic, with enlarged character scale."
+  },
+  {
+    "id": "astronaut-model",
+    "name": "Astronaut",
+    "owner": "DigitalSpace Corporation via NASA",
+    "url": "https://science.nasa.gov/3d-resources/astronaut/",
+    "status": "USED / 3D ASSET",
+    "description": "Static GLB with procedural bob/sway, not a biomechanics rig. All textured materials replaced in renderer."
+  },
+  {
+    "id": "raw-photos",
+    "name": "Perseverance Mastcam-Z regional context",
+    "owner": "NASA/JPL-Caltech",
+    "url": "https://science.nasa.gov/resource/perseverance-view-of-the-delta-in-jezero-crater/",
+    "status": "USED / OBSERVED CONTEXT",
+    "description": "NASA products PIA24485 (Sol 4) and PIA25212 (Sol 406) cached on science cards. Regional context only; not registered to proposed stop coordinates."
+  },
+  {
+    "id": "worldview",
+    "name": "NASA Worldview",
+    "owner": "NASA Earthdata",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "status": "NOT USED",
+    "description": "Earth imagery; not a Mars basemap."
+  },
+  {
+    "id": "curiosity-reference",
+    "name": "Curiosity Mount Sharp route",
+    "owner": "NASA",
+    "url": "https://science.nasa.gov/resource/curiositys-proposed-path-up-mount-sharp/",
+    "status": "REFERENCE ONLY / NOT USED AS DATA",
+    "description": "A different landing site; not Jezero terrain."
+  },
+  {
+    "id": "404-svnet",
+    "name": "404-SVNet v1.0 trained models",
+    "owner": "Team 404 / simulation research",
+    "url": "https://scikit-learn.org/stable/modules/ensemble.html",
+    "status": "TRAINED / SIMULATED LABELS",
+    "description": "Three-member gradient-boosted ensemble, 31 public pre-action features; separate spatial train, validation, calibration and test regions. No real astronaut safety outcomes."
+  }
+]

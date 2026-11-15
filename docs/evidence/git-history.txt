@@ -1,0 +1,5 @@
+e804d62 feat: ground terrain in NASA CTX and train calibrated 404-SVNet
+692de7f feat: package experiments evidence and submission draft
+18b7b39 feat: add seeded scout beliefs and route replanning
+d2c4e69 feat: add constrained EVA round-trip planning
+ad4cdb9 feat: add NASA atlas assets and labelled terrain foundation

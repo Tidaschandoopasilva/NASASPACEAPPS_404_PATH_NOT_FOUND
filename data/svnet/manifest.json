@@ -1,0 +1,115 @@
+{
+  "version": "404-svnet-data-2",
+  "features": [
+    "distance_m",
+    "nominal_minutes",
+    "ascent_m",
+    "mean_slope_deg",
+    "max_slope_deg",
+    "p90_slope_deg",
+    "nodata_fraction",
+    "observed_fraction",
+    "resolution_m",
+    "detour_minutes",
+    "hazard_prior",
+    "hazard_entropy",
+    "sensor_sigma",
+    "sensor_tpr",
+    "sensor_fpr",
+    "budget_minutes",
+    "reserve_fraction",
+    "science_value",
+    "energy_budget",
+    "scout_distance_m",
+    "scout_minutes",
+    "scout_cost",
+    "return_leg_fraction",
+    "crosses_corridor",
+    "nominal_return_margin",
+    "graph_feasible",
+    "mission_distance_m",
+    "nominal_energy",
+    "action_proceed",
+    "action_avoid",
+    "action_scout"
+  ],
+  "scenarios": 2300,
+  "action_rows": 6900,
+  "counts": {
+    "train": 1600,
+    "validation": 200,
+    "calibration": 200,
+    "test": 300
+  },
+  "regions_native_pixels": {
+    "train": [
+      0,
+      217,
+      0,
+      219
+    ],
+    "validation": [
+      0,
+      217,
+      231,
+      450
+    ],
+    "calibration": [
+      229,
+      446,
+      0,
+      219
+    ],
+    "test": [
+      229,
+      446,
+      231,
+      450
+    ]
+  },
+  "source_affine": [
+    20.0,
+    0.0,
+    4349379.999999998,
+    0.0,
+    -20.0,
+    1098380.0000000028,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_sha256": "c5c4368c9fabdbb81233d6c0c565bfe1eaf5ffcb3160d0997426ce6e089758e5",
+  "source_ids": [
+    "usgs-ctx-dem"
+  ],
+  "geometry": "DERIVED from NASA MRO CTX / USGS DEM",
+  "labels": "SIMULATED; not observed astronaut outcomes",
+  "effective_resolution_m": [
+    20,
+    40,
+    60
+  ],
+  "attempts": {
+    "train": {
+      "accepted": 1600,
+      "attempts": 1637,
+      "excluded_no_route": 37
+    },
+    "validation": {
+      "accepted": 200,
+      "attempts": 200,
+      "excluded_no_route": 0
+    },
+    "calibration": {
+      "accepted": 200,
+      "attempts": 203,
+      "excluded_no_route": 3
+    },
+    "test": {
+      "accepted": 300,
+      "attempts": 300,
+      "excluded_no_route": 0
+    }
+  },
+  "split_method": "Separate geographic quadrants, 12-pixel gap, disjoint seeds; action siblings kept together"
+}

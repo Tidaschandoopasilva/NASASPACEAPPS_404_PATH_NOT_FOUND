@@ -1,0 +1,32 @@
+{
+  "id": "nasa-trek-mola-context",
+  "source_ids": [
+    "nasa-trek-hirise"
+  ],
+  "data_state": "OBSERVED",
+  "bounds": [
+    77.4,
+    18.42,
+    77.48,
+    18.49
+  ],
+  "coordinate_system": "urn:ogc:def:crs:EPSG::104905",
+  "layer_id": "Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw",
+  "matrix": "8",
+  "tile_size": [
+    256,
+    256
+  ],
+  "tiles": [
+    {
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw/1.0.0//default/default028mm/8/101/366.jpg",
+      "bytes": 50952
+    }
+  ],
+  "acquired": "2026-11-14",
+  "credit": "NASA/JPL/USGS, Mars Trek",
+  "effective_resolution_degrees": [
+    0.00274658203125,
+    0.00274658203125
+  ]
+}

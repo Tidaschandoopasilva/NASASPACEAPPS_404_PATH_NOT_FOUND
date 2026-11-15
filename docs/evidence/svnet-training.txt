@@ -1,0 +1,3 @@
+{'max_leaf_nodes': 7, 'validation_score': 0.368563474292305}
+{'max_leaf_nodes': 15, 'validation_score': 0.35122099398042805}
+TRAINED 2.5875790119171143 seconds

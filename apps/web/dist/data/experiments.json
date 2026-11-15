@@ -1,0 +1,584 @@
+{
+  "note": "Research simulator; not validated for mission operations.",
+  "provenance": "simulation-on-observed-terrain",
+  "data_state": "SIMULATED",
+  "source_ids": [
+    "usgs-ctx-dem"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "waypoints_grid": [
+    [
+      78,
+      22
+    ],
+    [
+      30,
+      34
+    ],
+    [
+      42,
+      72
+    ]
+  ],
+  "episodes": 2400,
+  "regimes": [
+    {
+      "regime": "baseline",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 9.703569235970122,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 9.703569235970122,
+        "expected_loss_after": 7.653695511580471,
+        "scout_cost": 8,
+        "vos": -5.95012627561035,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 2.05 utility units; scouting costs 8.00. Proceed loss = 30.00; avoid detour = 9.70.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 13.024247942717667
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 175.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 24.32067870674754
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 0.97,
+          "route_minutes": 171.49868005863456,
+          "meters": 7493.849106132152,
+          "slip_events": 0.26,
+          "uncertainty_reduction": 0.4800588500914645,
+          "utility": 20.50131994136543
+        }
+      ],
+      "paired_delta_mean": 7.4770719986477685,
+      "paired_delta_median": -8.0,
+      "bootstrap_95_ci": [
+        0.8652147680865733,
+        14.603750767410457
+      ]
+    },
+    {
+      "regime": "expensive-scout",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 9.703569235970122,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 9.703569235970122,
+        "expected_loss_after": 7.653695511580471,
+        "scout_cost": 73,
+        "vos": -70.95012627561034,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 2.05 utility units; scouting costs 73.00. Proceed loss = 30.00; avoid detour = 9.70.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 13.024247942717667
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 175.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 24.32067870674754
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 0.97,
+          "route_minutes": 171.49868005863456,
+          "meters": 7493.849106132152,
+          "slip_events": 0.26,
+          "uncertainty_reduction": 0.4800588500914645,
+          "utility": -44.498680058634555
+        }
+      ],
+      "paired_delta_mean": -57.52292800135224,
+      "paired_delta_median": -73.0,
+      "bootstrap_95_ci": [
+        -64.13478523191343,
+        -50.396249232589554
+      ]
+    },
+    {
+      "regime": "rare-hazard",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 8.22840549955231,
+      "estimate": {
+        "prior": 0.03,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 3.0,
+        "expected_loss_after": 1.458049267869232,
+        "scout_cost": 8,
+        "vos": -6.458049267869232,
+        "recommendation": "PROCEED",
+        "why": "Expected information saves 1.54 utility units; scouting costs 8.00. Proceed loss = 3.00; avoid detour = 8.23.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.98,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 32.024247942717665
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 174.20415755683473,
+          "meters": 7846.681951918505,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 25.795842443165355
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 0.99,
+          "route_minutes": 169.79859260723754,
+          "meters": 7385.154547357764,
+          "slip_events": 0.1,
+          "uncertainty_reduction": 0.03210398048822552,
+          "utility": 24.201407392762427
+        }
+      ],
+      "paired_delta_mean": -7.822840549955231,
+      "paired_delta_median": -8.0,
+      "bootstrap_95_ci": [
+        -9.0696927149418,
+        -5.740556494959708
+      ]
+    },
+    {
+      "regime": "common-hazard",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 9.703569235970122,
+      "estimate": {
+        "prior": 0.7,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 9.703569235970122,
+        "expected_loss_after": 9.703569235970122,
+        "scout_cost": 8,
+        "vos": -8.0,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 0.00 utility units; scouting costs 8.00. Proceed loss = 70.00; avoid detour = 9.70.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.33,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": -32.975752057282335
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 175.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 24.32067870674754
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 178.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.62,
+          "uncertainty_reduction": 0.420232269887143,
+          "utility": 16.32067870674754
+        }
+      ],
+      "paired_delta_mean": 49.296430764029864,
+      "paired_delta_median": 82.29643076402988,
+      "bootstrap_95_ci": [
+        40.296430764029886,
+        58.296430764029864
+      ]
+    },
+    {
+      "regime": "noisy-sensor",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 9.703569235970122,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.6607734736926962,
+        "fpr": 0.3041155766046213,
+        "expected_loss_now": 9.703569235970122,
+        "expected_loss_after": 9.703569235970122,
+        "scout_cost": 8,
+        "vos": -8.0,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 0.00 utility units; scouting costs 8.00. Proceed loss = 30.00; avoid detour = 9.70.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 13.024247942717667
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 175.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 24.32067870674754
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 178.67932129325254,
+          "meters": 7949.16365348786,
+          "slip_events": 0.36,
+          "uncertainty_reduction": 0.11450672595430335,
+          "utility": 16.32067870674754
+        }
+      ],
+      "paired_delta_mean": 3.2964307640298784,
+      "paired_delta_median": -17.70356923597012,
+      "bootstrap_95_ci": [
+        -4.7035692359701216,
+        11.296430764029884
+      ]
+    },
+    {
+      "regime": "no-uncertainty-penalty",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 8.22840549955231,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 8.22840549955231,
+        "expected_loss_after": 7.174257527978997,
+        "scout_cost": 8,
+        "vos": -6.945852028426688,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 1.05 utility units; scouting costs 8.00. Proceed loss = 30.00; avoid detour = 8.23.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 165.97575205728234,
+          "meters": 7333.873724628794,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 13.024247942717667
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 174.20415755683473,
+          "meters": 7846.681951918505,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 25.795842443165355
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 0.97,
+          "route_minutes": 171.11513748716592,
+          "meters": 7467.2038637241185,
+          "slip_events": 0.26,
+          "uncertainty_reduction": 0.4800588500914645,
+          "utility": 20.88486251283406
+        }
+      ],
+      "paired_delta_mean": 7.860614570116399,
+      "paired_delta_median": -8.0,
+      "bootstrap_95_ci": [
+        1.189750790098492,
+        15.120058075156692
+      ]
+    },
+    {
+      "regime": "flat-terrain",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 10.22210677900702,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 10.22210677900702,
+        "expected_loss_after": 7.822223647080177,
+        "scout_cost": 8,
+        "vos": -5.600116868073156,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 2.40 utility units; scouting costs 8.00. Proceed loss = 30.00; avoid detour = 10.22.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 122.18343261579184,
+          "meters": 7331.005956947515,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 56.81656738420812
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 132.40553939479884,
+          "meters": 7944.332363687934,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": 67.59446060520109
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 0.97,
+          "route_minutes": 127.84118037833366,
+          "meters": 7490.470822700025,
+          "slip_events": 0.26,
+          "uncertainty_reduction": 0.4800588500914645,
+          "utility": 64.1588196216663
+        }
+      ],
+      "paired_delta_mean": 7.342252237458175,
+      "paired_delta_median": -8.0,
+      "bootstrap_95_ci": [
+        0.7511365086184552,
+        14.422262627347541
+      ]
+    },
+    {
+      "regime": "steeper-terrain",
+      "status": "completed",
+      "n_seeds": 100,
+      "crosses_uncertain_corridor": true,
+      "detour_minutes": 6.486639191036431,
+      "estimate": {
+        "prior": 0.3,
+        "tpr": 0.8500009583985522,
+        "fpr": 0.10000904996608373,
+        "expected_loss_now": 6.486639191036431,
+        "expected_loss_after": 6.486639191036431,
+        "scout_cost": 8,
+        "vos": -8.0,
+        "recommendation": "AVOID",
+        "why": "Expected information saves 0.00 utility units; scouting costs 8.00. Proceed loss = 30.00; avoid detour = 6.49.",
+        "units": "assumed utility units; time penalties in minutes"
+      },
+      "policies": [
+        {
+          "strategy": "proceed",
+          "science_completion": 1.0,
+          "safe_return": 0.79,
+          "route_minutes": 210.01415107706023,
+          "meters": 7342.450148723204,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": -31.014151077060234
+        },
+        {
+          "strategy": "avoid",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 216.5007902680966,
+          "meters": 8043.986009006509,
+          "slip_events": 0.0,
+          "uncertainty_reduction": 0.0,
+          "utility": -16.50079026809666
+        },
+        {
+          "strategy": "scout",
+          "science_completion": 1.0,
+          "safe_return": 1.0,
+          "route_minutes": 219.5007902680966,
+          "meters": 8043.986009006509,
+          "slip_events": 0.26,
+          "uncertainty_reduction": 0.4800588500914645,
+          "utility": -24.500790268096672
+        }
+      ],
+      "paired_delta_mean": 6.513360808963571,
+      "paired_delta_median": -14.486639191036431,
+      "bootstrap_95_ci": [
+        -1.4866391910364314,
+        14.51336080896357
+      ]
+    }
+  ],
+  "method": "Single binary corridor, two precomputed routes; Gaussian slip sensor. Research sensitivity study, not Mars performance evidence."
+}

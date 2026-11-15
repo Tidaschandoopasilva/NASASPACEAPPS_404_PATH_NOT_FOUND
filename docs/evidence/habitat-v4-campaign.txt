@@ -1,0 +1,13 @@
+10 expeditions; 2.3 sols; 0 plans revised
+20 expeditions; 4.54 sols; 0 plans revised
+30 expeditions; 6.7 sols; 1 plans revised
+40 expeditions; 8.93 sols; 2 plans revised
+50 expeditions; 11.22 sols; 2 plans revised
+60 expeditions; 13.34 sols; 3 plans revised
+70 expeditions; 15.6 sols; 3 plans revised
+80 expeditions; 17.75 sols; 4 plans revised
+90 expeditions; 20.09 sols; 4 plans revised
+100 expeditions; 22.22 sols; 5 plans revised
+110 expeditions; 24.53 sols; 5 plans revised
+120 expeditions; 26.79 sols; 5 plans revised
+{'oxygen_l': 63143.993, 'water_l': 437.202, 'suit_wh': 124600.142, 'kit_wh': 65526.981, 'robot_wh': 53470.748, 'crew_minutes': 21421.09, 'habitat_wh': 454080.0}

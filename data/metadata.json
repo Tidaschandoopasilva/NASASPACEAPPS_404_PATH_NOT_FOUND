@@ -1,0 +1,50 @@
+{
+  "id": "jezero-roi",
+  "data_state": "DERIVED",
+  "label": "USGS CTX DEM, resampled",
+  "source_ids": [
+    "usgs-ctx-dem"
+  ],
+  "bounds": [
+    77.4,
+    18.42,
+    77.48,
+    18.49
+  ],
+  "coordinate_system": "Mars sphere equirectangular; planetocentric; east positive",
+  "radius_m": 3396190.0,
+  "standard_parallel_deg": 18.4663,
+  "dx_m": 47.345389967988126,
+  "dy_m": 43.67609291190781,
+  "width": 96,
+  "height": 96,
+  "height_min_m": -2621.045654296875,
+  "height_max_m": -2435.5693359375,
+  "native": {
+    "crs": "PROJCS[\"Jezero_Crater_Projection\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",18.4663],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "affine": [
+      20.0,
+      0.0,
+      4349379.999999998,
+      0.0,
+      -20.0,
+      1098380.0000000028,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "filename": "jezero-ctx-crop.tif"
+  },
+  "png_nodata": 65535,
+  "png_scale_m": 0.0028302303897118288,
+  "png_offset_m": -2621.045654296875,
+  "effective_resolution_m": [
+    47.345389967988126,
+    43.67609291190781
+  ],
+  "units": "meters / degrees"
+}

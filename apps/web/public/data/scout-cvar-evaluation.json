@@ -1,0 +1,87 @@
+{
+  "scope": "Archived candidate-replay proxy, not full mesh SCOUT-CVaR evaluation",
+  "delta": 0.1,
+  "confidence": 0.95,
+  "curve": [
+    {
+      "threshold": 0.0,
+      "accepted": 0,
+      "failures": 0,
+      "upper": 1.0
+    },
+    {
+      "threshold": 0.1,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.2,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.30000000000000004,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.4,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.5,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.6000000000000001,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.7000000000000001,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    },
+    {
+      "threshold": 1.0,
+      "accepted": 61,
+      "failures": 0,
+      "upper": 0.084623775327931
+    }
+  ],
+  "selected_threshold": 1.0,
+  "test_scenarios": 100,
+  "candidate_cvar_replay": {
+    "coverage": 0.65,
+    "accepted": 65,
+    "return_failure_rate": 0.0,
+    "utility_cvar90": -47.066809920820575
+  },
+  "risk_astar": {
+    "coverage": 0.64,
+    "accepted": 64,
+    "return_failure_rate": 0.0,
+    "utility_cvar90": -47.066809920820575
+  }
+}

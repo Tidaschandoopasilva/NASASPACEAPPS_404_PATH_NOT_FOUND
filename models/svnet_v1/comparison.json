@@ -1,0 +1,59 @@
+{
+  "expanded_test": {
+    "scenarios": 300,
+    "v1": {
+      "mean_utility": 43.10339154533397,
+      "coverage": 0.5766666666666667,
+      "return_brier": 0.09355039618074959,
+      "return_log_loss": 0.2820770015030548
+    },
+    "v2": {
+      "mean_utility": 40.724760776807756,
+      "coverage": 0.5466666666666666,
+      "return_brier": 0.0886960782968971,
+      "return_log_loss": 0.28734428742060225
+    },
+    "paired_utility_delta_ci95": [
+      -4.920108334546228,
+      -0.2613348994531949
+    ]
+  },
+  "original_100": {
+    "scenarios": 100,
+    "v1": {
+      "mean_utility": 40.516096114623736,
+      "coverage": 0.54,
+      "return_brier": 0.09972067013199938,
+      "return_log_loss": 0.297173350679738
+    },
+    "v2": {
+      "mean_utility": 37.60366530733304,
+      "coverage": 0.5,
+      "return_brier": 0.0934871552674223,
+      "return_log_loss": 0.29269117801431366
+    },
+    "paired_utility_delta_ci95": [
+      -7.213728790148512,
+      -0.05423938404423349
+    ]
+  },
+  "additional_test": {
+    "scenarios": 200,
+    "v1": {
+      "mean_utility": 44.397039260689105,
+      "coverage": 0.595,
+      "return_brier": 0.0904652592051247,
+      "return_log_loss": 0.2745288269147132
+    },
+    "v2": {
+      "mean_utility": 42.28530851154512,
+      "coverage": 0.57,
+      "return_brier": 0.08630053981163452,
+      "return_log_loss": 0.28467084212374655
+    },
+    "paired_utility_delta_ci95": [
+      -5.187716667694064,
+      0.48675759953229203
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "bounds": [
+    77.4,
+    18.42,
+    77.48,
+    18.49
+  ],
+  "shape": [
+    209,
+    226
+  ],
+  "height_range_m": [
+    -2621.2109375,
+    -2434.9365234375
+  ],
+  "display_scale_m": [
+    -2608.9698291015625,
+    -2454.2134521484377
+  ],
+  "source": "USGS/NASA CTX Jezero DEM",
+  "lighting": "Synthetic northwest hillshade, 2\u00d7 vertical exaggeration"
+}

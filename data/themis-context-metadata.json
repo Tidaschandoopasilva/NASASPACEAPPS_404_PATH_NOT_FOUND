@@ -1,0 +1,32 @@
+{
+  "id": "nasa-trek-themis-context",
+  "source_ids": [
+    "nasa-trek-themis-context"
+  ],
+  "data_state": "OBSERVED",
+  "bounds": [
+    77.4,
+    18.42,
+    77.48,
+    18.49
+  ],
+  "coordinate_system": "urn:ogc:def:crs:EPSG::104905",
+  "layer_id": "THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018",
+  "matrix": "9",
+  "tile_size": [
+    256,
+    256
+  ],
+  "tiles": [
+    {
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018/1.0.0//default/default028mm/9/203/732.png",
+      "bytes": 38738
+    }
+  ],
+  "acquired": "2026-11-14",
+  "credit": "NASA Mars Odyssey / ASU THEMIS, via NASA/JPL Mars Trek",
+  "effective_resolution_degrees": [
+    0.001373291015625,
+    0.001373291015625
+  ]
+}

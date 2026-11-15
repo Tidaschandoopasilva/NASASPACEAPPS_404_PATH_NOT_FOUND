@@ -1,0 +1,267 @@
+{
+  "model_version": "404-SVNet v1.0",
+  "source_ids": [
+    "usgs-ctx-dem"
+  ],
+  "label_provenance": "SIMULATED, real CTX terrain",
+  "test_scenarios": 100,
+  "test_action_rows": 300,
+  "test_region": "Southeast quadrant, disjoint from model fitting, selection and calibration",
+  "policies": [
+    {
+      "policy": "shortest-distance",
+      "n": 100,
+      "success": 0.4,
+      "return_feasible": 0.4,
+      "minutes": 128.42796869688394,
+      "energy": 67.86960120661368,
+      "science": 136.12367653364862,
+      "utility": -65.87821240455808,
+      "scouting_overhead": 0.0,
+      "regret": 121.2873293137333,
+      "abstained": 0.0,
+      "utility_ci95": [
+        -92.82677014682022,
+        -37.36323936294185
+      ]
+    },
+    {
+      "policy": "risk-weighted-astar",
+      "n": 100,
+      "success": 0.64,
+      "return_feasible": 0.64,
+      "minutes": 116.19646096736511,
+      "energy": 58.7241906155185,
+      "science": 167.84563721065172,
+      "utility": 3.9043381201829503,
+      "scouting_overhead": 0.0,
+      "regret": 51.50477878899228,
+      "abstained": 0.0,
+      "utility_ci95": [
+        -19.919906754838067,
+        27.82437845622426
+      ]
+    },
+    {
+      "policy": "always-scout",
+      "n": 100,
+      "success": 0.49,
+      "return_feasible": 0.49,
+      "minutes": 126.98896029059193,
+      "energy": 61.44999431964927,
+      "science": 152.95619292330625,
+      "utility": -56.320042927124526,
+      "scouting_overhead": 10.683907072118018,
+      "regret": 111.72915983629979,
+      "abstained": 0.0,
+      "utility_ci95": [
+        -79.04231336772717,
+        -34.489022778565015
+      ]
+    },
+    {
+      "policy": "uncertainty-threshold",
+      "n": 100,
+      "success": 0.47,
+      "return_feasible": 0.47,
+      "minutes": 127.43904406059002,
+      "energy": 62.356031954681576,
+      "science": 149.72658149728065,
+      "utility": -58.30878962820263,
+      "scouting_overhead": 8.449548951970527,
+      "regret": 113.71790653737787,
+      "abstained": 0.0,
+      "utility_ci95": [
+        -81.42710268664605,
+        -34.602419046206286
+      ]
+    },
+    {
+      "policy": "404-SVNet",
+      "n": 100,
+      "success": 0.54,
+      "return_feasible": 1.0,
+      "minutes": 63.499500967269626,
+      "energy": 32.0977433303145,
+      "science": 110.43514574795623,
+      "utility": 40.516096114623736,
+      "scouting_overhead": 0.0,
+      "regret": 14.893020794551504,
+      "abstained": 0.46,
+      "utility_ci95": [
+        29.112400498549007,
+        53.66247789584874
+      ]
+    },
+    {
+      "policy": "uncertainty-threshold-constrained",
+      "n": 100,
+      "success": 0.47,
+      "return_feasible": 0.96,
+      "minutes": 67.2654342658134,
+      "energy": 33.16434751726621,
+      "science": 100.85207374319077,
+      "utility": 14.973689940716822,
+      "scouting_overhead": 4.129883884903748,
+      "regret": 40.43542696845841,
+      "abstained": 0.49,
+      "utility_ci95": [
+        0.020425136722438446,
+        29.214922134926336
+      ]
+    },
+    {
+      "policy": "risk-astar-constrained",
+      "n": 100,
+      "success": 0.64,
+      "return_feasible": 1.0,
+      "minutes": 74.65124395706516,
+      "energy": 37.730173345720075,
+      "science": 132.0197620479592,
+      "utility": 49.822483421750015,
+      "scouting_overhead": 0.0,
+      "regret": 5.5866334874252175,
+      "abstained": 0.36,
+      "utility_ci95": [
+        36.70631867878002,
+        63.68984331317479
+      ]
+    }
+  ],
+  "calibration": {
+    "success": {
+      "brier_score": 0.09972067013199938,
+      "log_loss": 0.297173350679738,
+      "ece10": 0.05862078496674877,
+      "reliability_bins": [
+        {
+          "mean_predicted": 0.009052719322035935,
+          "observed_fraction": 0.030612244897959183,
+          "n": 98
+        },
+        {
+          "mean_predicted": 0.1507243865363742,
+          "observed_fraction": 0.3125,
+          "n": 16
+        },
+        {
+          "mean_predicted": 0.2375042441570372,
+          "observed_fraction": 0.625,
+          "n": 8
+        },
+        {
+          "mean_predicted": 0.3598520177393774,
+          "observed_fraction": 0.5,
+          "n": 14
+        },
+        {
+          "mean_predicted": 0.4408173533570036,
+          "observed_fraction": 0.35294117647058826,
+          "n": 17
+        },
+        {
+          "mean_predicted": 0.5525055100644797,
+          "observed_fraction": 0.3333333333333333,
+          "n": 18
+        },
+        {
+          "mean_predicted": 0.660140263108698,
+          "observed_fraction": 0.8333333333333334,
+          "n": 6
+        },
+        {
+          "mean_predicted": 0.7424307190202325,
+          "observed_fraction": 0.7272727272727273,
+          "n": 11
+        },
+        {
+          "mean_predicted": 0.8513182693437509,
+          "observed_fraction": 0.8235294117647058,
+          "n": 17
+        },
+        {
+          "mean_predicted": 0.9863752976013673,
+          "observed_fraction": 0.9789473684210527,
+          "n": 95
+        }
+      ]
+    },
+    "return_feasible": {
+      "brier_score": 0.09972067013199938,
+      "log_loss": 0.297173350679738,
+      "ece10": 0.05862078496674877,
+      "reliability_bins": [
+        {
+          "mean_predicted": 0.009052719322035935,
+          "observed_fraction": 0.030612244897959183,
+          "n": 98
+        },
+        {
+          "mean_predicted": 0.1507243865363742,
+          "observed_fraction": 0.3125,
+          "n": 16
+        },
+        {
+          "mean_predicted": 0.2375042441570372,
+          "observed_fraction": 0.625,
+          "n": 8
+        },
+        {
+          "mean_predicted": 0.3598520177393774,
+          "observed_fraction": 0.5,
+          "n": 14
+        },
+        {
+          "mean_predicted": 0.4408173533570036,
+          "observed_fraction": 0.35294117647058826,
+          "n": 17
+        },
+        {
+          "mean_predicted": 0.5525055100644797,
+          "observed_fraction": 0.3333333333333333,
+          "n": 18
+        },
+        {
+          "mean_predicted": 0.660140263108698,
+          "observed_fraction": 0.8333333333333334,
+          "n": 6
+        },
+        {
+          "mean_predicted": 0.7424307190202325,
+          "observed_fraction": 0.7272727272727273,
+          "n": 11
+        },
+        {
+          "mean_predicted": 0.8513182693437509,
+          "observed_fraction": 0.8235294117647058,
+          "n": 17
+        },
+        {
+          "mean_predicted": 0.9863752976013673,
+          "observed_fraction": 0.9789473684210527,
+          "n": 95
+        }
+      ]
+    }
+  },
+  "regression_mae": {
+    "minutes": 8.816540836363748,
+    "energy": 6.242974126080655,
+    "science": 29.02049723297034
+  },
+  "paired_vs_uncertainty_threshold": {
+    "baseline": "uncertainty-threshold-constrained",
+    "mean_delta": 25.542406173906908,
+    "ci95": [
+      13.914880762366352,
+      38.87553968498371
+    ]
+  },
+  "abstention_accounting": "Human review earns zero science/utility and incurs zero travel; return-feasible is 1 because no excursion starts. Coverage is reported. This can favor conservative policies.",
+  "limitations": [
+    "Single binary uncertain corridor per scenario",
+    "Synthetic traction, delay and failure labels",
+    "Only Jezero crop; no global Mars generalization",
+    "Three-model spread is heuristic epistemic uncertainty, not a statistical guarantee"
+  ]
+}

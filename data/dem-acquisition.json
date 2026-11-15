@@ -1,0 +1,58 @@
+{
+  "id": "usgs-ctx-dem",
+  "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/mars2020_trn/CTX/ScienceInvestigationMaps_JPL/M20_JezeroCrater_CTXDEM_20m.tif",
+  "acquired": "2026-11-14",
+  "owner": "USGS / NASA MRO CTX",
+  "source_ids": [
+    "usgs-ctx-dem"
+  ],
+  "data_state": "OBSERVED",
+  "native_crs": "PROJCS[\"Jezero_Crater_Projection\",GEOGCS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",18.4663],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "native_affine": [
+    20.0,
+    0.0,
+    4328999.999999998,
+    0.0,
+    -20.0,
+    1143420.0000000028,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "native_resolution_m": [
+    20,
+    20
+  ],
+  "source_shape": [
+    5067,
+    4456
+  ],
+  "window": [
+    1019,
+    2252,
+    450,
+    446
+  ],
+  "requested_bounds": [
+    77.36,
+    18.38,
+    77.52,
+    18.53
+  ],
+  "crop_transform": [
+    20.0,
+    0.0,
+    4349379.999999998,
+    0.0,
+    -20.0,
+    1098380.0000000028,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "downloaded_bytes": 8015040,
+  "crop_bytes": 640983,
+  "sha256": "c5c4368c9fabdbb81233d6c0c565bfe1eaf5ffcb3160d0997426ce6e089758e5",
+  "nodata": -3.4028234663852886e+38,
+  "method": "HTTP byte ranges; verified TIFF strip layout; pixel values copied without resampling"
+}

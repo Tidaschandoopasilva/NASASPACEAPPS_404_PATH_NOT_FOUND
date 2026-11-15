@@ -1,0 +1,1 @@
+sites-preview start: exit 1. Preview startup timed out. Node v24.22.1 ERR_SYSTEM_ERROR uv_interface_addresses. Vite failed; Python API started. sites-preview stop exit 0. Browser QA and screenshots NOT RUN. No screenshot artifacts fabricated.

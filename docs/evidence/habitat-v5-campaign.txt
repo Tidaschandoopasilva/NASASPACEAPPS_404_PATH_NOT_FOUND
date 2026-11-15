@@ -1,0 +1,13 @@
+10 recorded | 36 Atlas sectors | 0 plans revised
+20 recorded | 36 Atlas sectors | 0 plans revised
+30 recorded | 36 Atlas sectors | 0 plans revised
+40 recorded | 36 Atlas sectors | 0 plans revised
+50 recorded | 36 Atlas sectors | 0 plans revised
+60 recorded | 36 Atlas sectors | 0 plans revised
+70 recorded | 36 Atlas sectors | 0 plans revised
+80 recorded | 36 Atlas sectors | 0 plans revised
+90 recorded | 36 Atlas sectors | 0 plans revised
+100 recorded | 36 Atlas sectors | 0 plans revised
+110 recorded | 36 Atlas sectors | 0 plans revised
+120 recorded | 36 Atlas sectors | 0 plans revised
+V5 campaign completed, inventory: {'oxygen_l': 73942.991, 'water_l': 509.17, 'suit_wh': 120982.554, 'kit_wh': 68407.375, 'robot_wh': 60736.722, 'crew_minutes': 24203.75, 'habitat_wh': 473520.0}

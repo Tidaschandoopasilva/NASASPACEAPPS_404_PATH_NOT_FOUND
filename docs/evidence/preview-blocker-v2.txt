@@ -1,0 +1,1 @@
+sites-preview start: exit 1; Node 24.22.1 uv_interface_addresses ERR_SYSTEM_ERROR; Vite failed during managed preview startup. Python uvicorn started. sites-preview stop: exit 0. No browser screenshot or interaction testing performed. Scientific data figures were rendered and inspected separately.

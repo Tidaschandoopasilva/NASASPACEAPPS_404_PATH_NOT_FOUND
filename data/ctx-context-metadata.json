@@ -1,0 +1,36 @@
+{
+  "id": "nasa-trek-ctx-context",
+  "source_ids": [
+    "nasa-trek-hirise"
+  ],
+  "data_state": "OBSERVED",
+  "bounds": [
+    77.4,
+    18.42,
+    77.48,
+    18.49
+  ],
+  "coordinate_system": "urn:ogc:def:crs:EPSG::104905",
+  "layer_id": "CTX_beta01_uncontrolled_5m_Caltech",
+  "matrix": "10",
+  "tile_size": [
+    512,
+    512
+  ],
+  "tiles": [
+    {
+      "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/10/406/1464",
+      "bytes": 104356
+    },
+    {
+      "url": "https://astro.arcgis.com/arcgis/rest/services/OnMars/CTX/MapServer/tile/10/407/1464",
+      "bytes": 94293
+    }
+  ],
+  "acquired": "2026-11-14",
+  "credit": "NASA/JPL/USGS, Mars Trek",
+  "effective_resolution_degrees": [
+    0.00034332275390625,
+    0.00034332275390625
+  ]
+}
