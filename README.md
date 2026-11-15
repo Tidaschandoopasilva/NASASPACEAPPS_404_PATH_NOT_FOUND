@@ -85,3 +85,7 @@ The `apps/web/dist/` directory is bundled in this release for desktop use. If de
 ## License and attribution
 
 Original project code: see [LICENSE](LICENSE). Included NASA/USGS imagery and third-party models retain their respective source terms; see [NOTICE](NOTICE) and the source register. NASA does not sponsor or endorse this project.
+
+## NASA Space Apps 2026 presentation
+
+[View the seven-slide Team 404 presentation](404_PATH_NOT_FOUND_NASASPACEAPPS.pdf)
