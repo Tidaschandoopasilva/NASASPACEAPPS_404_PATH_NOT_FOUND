@@ -24,16 +24,73 @@ The project brings a NASA/USGS Jezero map, terrain mesh, research decision model
 
 **Five main views:** **Atlas** (imagery, route overlays, recorded sectors), **Mission 3D** (mission playback and habitat inventory), **Scout or Skip** (decision exploration), **Rewind** (saved research runs), and **404-SVNet** (model evaluation).
 
-## Installation — choose your version
+## Installation and running the application
 
-| Option | What you get | Requirements | Start here |
-| --- | --- | --- | --- |
-| **Windows desktop (recommended)** | Native app window; bundled frontend; no Node.js needed | Windows, 64-bit Python **3.11 or 3.12**, Edge WebView2 | [`README_DESKTOP.md`](README_DESKTOP.md) · [`docs/INSTALLATION.md`](docs/INSTALLATION.md) |
-| **Browser/development** | Editable React/TypeScript frontend and Python FastAPI server | Python **3.11 or 3.12**, Node.js **22.12+** (or 24) | [`docs/INSTALLATION.md`](docs/INSTALLATION.md#option-b-browser-and-developer-mode) |
+404: PATH NOT FOUND can be run as a **Windows desktop app** or in a **web browser** for development. The repository already includes the 3D/frontend build, terrain assets, and model files needed for the desktop version.
 
-**Fastest start on Windows:** extract the ZIP, run `setup_desktop.bat` once, then run `start_desktop.bat`. The app opens in its own window. Initial dependency installation needs internet; bundled terrain and maps work locally afterwards. The **NASA archive refresh** button is optional and does need network access.
+### Step 1 — Download the project
 
-For full command-by-command setup, Linux/macOS developer notes, troubleshooting, tests and deployment details see **[Installation and verification](docs/INSTALLATION.md)**.
+Click **Code → Download ZIP** on this repository and extract the entire ZIP before running any scripts. Alternatively, use Git:
+
+```bash
+git clone https://github.com/Tidaschandoopasilva/NASASPACEAPPS_404_PATH_NOT_FOUND.git
+cd NASASPACEAPPS_404_PATH_NOT_FOUND
+```
+
+### Option A — Windows desktop (recommended)
+
+**Install first:** Windows 10/11 (64-bit), **Python 3.11 or 3.12 (64-bit)** with the `py` launcher, and **Microsoft Edge WebView2 Runtime**. Internet is needed for the first dependency installation. **Node.js is NOT required** for the desktop app.
+
+From the extracted project's main folder:
+
+1. Double-click **`setup_desktop.bat`** once. This creates `.venv` and installs Python dependencies.
+2. Double-click **`start_desktop.bat`** to start the **404 | Jezero Habitat V7** app in a desktop window.
+3. Open **Atlas**, choose a survey circle, select **Run expedition**, and switch to **Mission 3D** to follow the simulated mission.
+
+Or use Command Prompt, from the repository root:
+
+```cmd
+setup_desktop.bat
+start_desktop.bat
+```
+
+The desktop uses the bundled `apps/web/dist/` frontend and a local Python backend. Mission and habitat campaign records persist at `%USERPROFILE%\MarsHabitat\desktop.sqlite3` by default.
+
+### Option B — Browser / developer mode
+
+**Install first:** Python **3.11 or 3.12**, **Node.js 22.12+ or 24** (with npm), and Git if cloning the repository.
+
+**On Windows**, open Command Prompt in the project root and run:
+
+```cmd
+scripts\setup.bat
+scripts\start_all.bat
+```
+
+Open **http://localhost:5173** in your browser. The FastAPI server runs at **http://127.0.0.1:8000**. Keep the command window open; press **Ctrl+C** to stop the development servers.
+
+**On macOS / Linux** (developer mode only), open Terminal in the project root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+npm --prefix apps/web ci
+PYTHON="$PWD/.venv/bin/python" npm run dev
+```
+
+Then visit **http://localhost:5173**.
+
+### Verify and troubleshoot
+
+- **Desktop:** the app window should show Atlas and Mission 3D. A blank window may indicate a missing **WebView2 Runtime** or `apps/web/dist/index.html`.
+- **Browser:** check **http://127.0.0.1:8000/health** for the API and **http://localhost:5173** for the interface.
+- If `py` is not recognized, install Python 3.11/3.12 with the Windows launcher and reopen Command Prompt.
+- If `npm` is not recognized, install Node.js (needed only for developer/browser mode).
+- To run tests on Windows after setup: `.venv\Scripts\python.exe -m pytest -q`.
+- To rebuild the React frontend after making changes: `npm run build`.
+
+For additional configuration, offline installation, campaign database options, and detailed troubleshooting, see **[Full installation guide](docs/INSTALLATION.md)** and **[Desktop user guide](README_DESKTOP.md)**.
 
 ## Screenshots — V7 desktop build
 
